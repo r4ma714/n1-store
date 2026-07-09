@@ -1,0 +1,13 @@
+{
+  "name": "N1 Store",
+  "short_name": "N1",
+  "description": "Premium iOS Signing Platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07070d",
+  "theme_color": "#07070d",
+  "icons": [
+    { "src": "/n1-logo.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/n1-logo.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

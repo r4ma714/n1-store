@@ -1,0 +1,45 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(45, 15, 105, 0.85), transparent 34%),
+    #05050a;
+  color: #fff;
+  padding: 30px;
+}
+
+.navbar {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+  display: flex;
+  gap: 22px;
+  color: #ddd;
+}
+
+.navbar a:hover {
+  color: #f5c542;
+}
+
+.card {
+  width: min(1000px, 92%);
+  margin: 110px auto 0;
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 42px;
+}
+
+.card span {
+  color: #f5c542;
+  font-weight: 900;
+}
+
+.card h1 {
+  font-size: clamp(38px, 6vw, 72px);
+  margin: 10px 0 18px;
+}
+
+.card p {
+  color: #c8c8d0;
+  line-height: 1.9;
+  max-width: 820px;
+}

@@ -1,0 +1,381 @@
+.loginPage,
+.adminPage {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(124, 58, 237, 0.28), transparent 32%),
+    radial-gradient(circle at 80% 0%, rgba(245, 197, 66, 0.14), transparent 30%),
+    #07070d;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginPage {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.loginCard {
+  width: min(440px, 100%);
+  padding: 34px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.42);
+  text-align: center;
+}
+
+.loginCard img {
+  width: 90px;
+  height: 90px;
+  border-radius: 24px;
+  object-fit: cover;
+  margin-bottom: 22px;
+}
+
+.badge,
+.panelTag {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(245,197,66,0.12);
+  color: #f5c542;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.loginCard h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.loginCard p,
+.loginCard span {
+  color: #bbb;
+  line-height: 1.7;
+}
+
+.loginCard input,
+.formGrid input,
+.formGrid select,
+.formGrid textarea,
+.filters input,
+.filters select {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: white;
+  outline: none;
+}
+
+.loginCard input {
+  margin: 22px 0 12px;
+}
+
+.loginCard button,
+.primaryBtn,
+.headerActions button,
+.headerActions a,
+.filters button,
+.orderActions button,
+.orderActions a {
+  border: 0;
+  cursor: pointer;
+  border-radius: 14px;
+  font-weight: 900;
+  padding: 13px 16px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginCard button,
+.primaryBtn {
+  width: 100%;
+  background: linear-gradient(135deg, #f5c542, #b7791f);
+  color: #08080d;
+  margin-bottom: 12px;
+}
+
+.adminPage {
+  padding: 28px;
+}
+
+.header {
+  width: min(1280px, 100%);
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.brand {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.brand img {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.brand h1 {
+  font-size: 30px;
+}
+
+.brand p {
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.headerActions,
+.filters,
+.orderActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.headerActions button,
+.headerActions a,
+.filters button,
+.orderActions button,
+.orderActions a {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #f5c542;
+}
+
+.statsGrid,
+.gridTwo,
+.panel {
+  width: min(1280px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.statsGrid div,
+.panel {
+  border-radius: 24px;
+  background: rgba(255,255,255,0.065);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+}
+
+.statsGrid div {
+  padding: 18px;
+}
+
+.statsGrid span {
+  display: block;
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.statsGrid strong {
+  color: #f5c542;
+  font-size: 24px;
+}
+
+.gridTwo {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.panel {
+  padding: 24px;
+}
+
+.panel h2 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.formGrid label {
+  color: #ddd;
+  font-weight: 800;
+}
+
+.formGrid textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.formGrid option,
+.filters option {
+  color: #111;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.primaryBtn {
+  margin-top: 16px;
+}
+
+.priceList {
+  display: grid;
+  gap: 12px;
+}
+
+.priceList div,
+.todoBox,
+.empty,
+.orderCard {
+  border-radius: 18px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.priceList div {
+  padding: 16px;
+  display: grid;
+  gap: 6px;
+}
+
+.priceList span,
+.todoBox h3 {
+  color: white;
+  font-weight: 900;
+}
+
+.priceList strong {
+  color: #f5c542;
+  font-size: 24px;
+}
+
+.priceList small,
+.todoBox p,
+.empty,
+.orderDetails p,
+.orderCard p {
+  color: #bbb;
+  line-height: 1.7;
+}
+
+.todoBox {
+  margin-top: 18px;
+  padding: 18px;
+}
+
+.ordersHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.filters input,
+.filters select {
+  margin-top: 0;
+  min-width: 210px;
+}
+
+.orderList {
+  display: grid;
+  gap: 14px;
+}
+
+.empty {
+  padding: 22px;
+  text-align: center;
+}
+
+.orderCard {
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+}
+
+.orderCard h3 {
+  font-size: 22px;
+}
+
+.orderMeta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.orderMeta span,
+.orderMeta strong,
+.orderMeta em {
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  font-style: normal;
+}
+
+.orderMeta strong {
+  color: #f5c542;
+}
+
+.pending { color: #f5c542; }
+.paid { color: #93c5fd; }
+.active { color: #86efac; }
+.done { color: #c4b5fd; }
+.cancelled { color: #fca5a5; }
+
+.orderDetails {
+  display: grid;
+  gap: 6px;
+}
+
+@media (max-width: 1100px) {
+  .statsGrid,
+  .gridTwo {
+    grid-template-columns: 1fr;
+  }
+
+  .header,
+  .ordersHeader {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 700px) {
+  .adminPage {
+    padding: 18px;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters input,
+  .filters select,
+  .filters button,
+  .headerActions button,
+  .headerActions a {
+    width: 100%;
+  }
+}

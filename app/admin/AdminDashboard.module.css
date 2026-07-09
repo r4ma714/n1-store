@@ -1,0 +1,523 @@
+.loginPage,
+.shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(124, 58, 237, 0.28), transparent 35%),
+    radial-gradient(circle at top right, rgba(245, 197, 66, 0.16), transparent 35%),
+    #07070d;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginPage {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.loginCard {
+  width: min(430px, 100%);
+  padding: 34px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.logo,
+.sidebarLogo {
+  width: 62px;
+  height: 62px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  color: #090910;
+  font-weight: 1000;
+  background: linear-gradient(135deg, #f5c542, #7c3aed);
+  box-shadow: 0 0 40px rgba(245, 197, 66, 0.25);
+}
+
+.loginCard h1 {
+  margin-top: 22px;
+  font-size: 34px;
+}
+
+.loginCard p,
+.loginCard span {
+  color: #bdbdcc;
+}
+
+.loginCard input {
+  width: 100%;
+  margin: 24px 0 14px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.15);
+  background: rgba(255,255,255,.08);
+  color: white;
+  outline: none;
+}
+
+.loginCard button {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f5c542, #c88922);
+  color: #08080d;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 290px 1fr;
+}
+
+.sidebar {
+  padding: 22px;
+  background: rgba(255,255,255,.055);
+  border-right: 1px solid rgba(255,255,255,.1);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebarHeader {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.sidebarHeader h2 {
+  font-size: 18px;
+  text-transform: lowercase;
+}
+
+.sidebarHeader p {
+  color: #f5c542;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.menuSearch {
+  width: 100%;
+  padding: 14px 15px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.24);
+  color: white;
+  outline: none;
+  margin-bottom: 14px;
+}
+
+.menu {
+  display: grid;
+  gap: 7px;
+}
+
+.menu button,
+.collapseBtn,
+.topActions button,
+.actionGrid button {
+  border: 0;
+  cursor: pointer;
+  color: #e9e9ef;
+}
+
+.menu button {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 28px 1fr auto;
+  align-items: center;
+  gap: 9px;
+  padding: 12px;
+  border-radius: 14px;
+  background: transparent;
+  text-align: left;
+}
+
+.menu button strong {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.menu button em {
+  min-width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, .18);
+  color: #86efac;
+  font-style: normal;
+}
+
+.menu button:hover,
+.menuActive {
+  background: rgba(245, 197, 66, .12) !important;
+  color: #f5c542 !important;
+}
+
+.collapseBtn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 13px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.08);
+}
+
+.content {
+  padding: 28px;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.topbar p {
+  color: #aaaabd;
+  text-transform: lowercase;
+}
+
+.topbar h1 {
+  font-size: clamp(30px, 4vw, 48px);
+}
+
+.topActions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.topActions a,
+.topActions button {
+  padding: 13px 16px;
+  border-radius: 15px;
+  text-decoration: none;
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.boostat,
+.alert,
+.panel,
+.orderCard {
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.07);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 60px rgba(0,0,0,.22);
+}
+
+.boostat {
+  position: relative;
+  display: flex;
+  gap: 18px;
+  padding: 25px;
+  border-radius: 26px;
+  margin-bottom: 16px;
+  background:
+    linear-gradient(135deg, rgba(245, 197, 66, .15), rgba(124, 58, 237, .16)),
+    rgba(255,255,255,.07);
+}
+
+.boostat button,
+.alert button {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star {
+  width: 52px;
+  height: 52px;
+  border-radius: 17px;
+  display: grid;
+  place-items: center;
+  background: rgba(245,197,66,.16);
+  color: #f5c542;
+  font-size: 30px;
+}
+
+.boostat strong {
+  color: #f5c542;
+}
+
+.boostat h2 {
+  margin: 7px 0;
+  font-size: 25px;
+}
+
+.boostat p {
+  color: #d1d1df;
+  line-height: 1.7;
+}
+
+.alert {
+  position: relative;
+  padding: 16px 48px 16px 18px;
+  border-radius: 18px;
+  margin-bottom: 18px;
+  color: #f4f4f7;
+}
+
+.alert strong {
+  color: #fca5a5;
+}
+
+.ordersGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.orderCard {
+  border-radius: 22px;
+  padding: 18px;
+}
+
+.orderCard div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #c9c9d6;
+  font-size: 13px;
+}
+
+.orderCard h3 {
+  font-size: 38px;
+  color: #f5c542;
+  margin: 14px 0 2px;
+}
+
+.orderCard small {
+  color: #8d8da0;
+}
+
+.mainGrid,
+.bottomGrid {
+  display: grid;
+  gap: 18px;
+}
+
+.mainGrid {
+  grid-template-columns: 1.35fr .85fr;
+}
+
+.bottomGrid {
+  grid-template-columns: 1fr 1fr;
+  margin-top: 18px;
+}
+
+.panel {
+  border-radius: 26px;
+  padding: 22px;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+  align-items: flex-start;
+}
+
+.panelHeader p {
+  color: #f5c542;
+  font-weight: 800;
+  text-transform: lowercase;
+}
+
+.panelHeader h2 {
+  margin-top: 4px;
+  font-size: 25px;
+}
+
+.panelHeader span {
+  padding: 8px 11px;
+  border-radius: 999px;
+  color: #d8ccff;
+  background: rgba(124,58,237,.20);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.statBox {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(0,0,0,.18);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.statBox p {
+  color: #bebed0;
+  font-size: 13px;
+}
+
+.statBox h3 {
+  font-size: 30px;
+  margin: 8px 0;
+  color: #fff;
+}
+
+.statBox small {
+  color: #858599;
+}
+
+.storageBox {
+  display: grid;
+  gap: 11px;
+}
+
+.storageLine {
+  display: flex;
+  justify-content: space-between;
+  color: #ddd;
+}
+
+.progress {
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  overflow: hidden;
+}
+
+.progress i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #f5c542, #7c3aed);
+}
+
+.license {
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(245,197,66,.1);
+  border: 1px solid rgba(245,197,66,.2);
+}
+
+.license p {
+  color: #cfcfde;
+  margin-bottom: 7px;
+}
+
+.license strong {
+  color: #f5c542;
+  text-transform: lowercase;
+}
+
+.actionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.actionGrid button {
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.1);
+  font-weight: 800;
+}
+
+.actionGrid button:hover {
+  border-color: rgba(245,197,66,.4);
+  color: #f5c542;
+}
+
+.note {
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(239,68,68,.12);
+  border: 1px solid rgba(239,68,68,.22);
+  color: #fecaca;
+}
+
+.groupStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.groupStats div {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(0,0,0,.18);
+}
+
+.groupStats strong {
+  display: block;
+  font-size: 28px;
+  color: #f5c542;
+}
+
+.groupStats span {
+  color: #aaaabd;
+  font-size: 13px;
+}
+
+@media (max-width: 1200px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+
+  .ordersGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mainGrid,
+  .bottomGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .content,
+  .sidebar {
+    padding: 16px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ordersGrid,
+  .statsGrid,
+  .actionGrid,
+  .groupStats {
+    grid-template-columns: 1fr;
+  }
+
+  .boostat {
+    flex-direction: column;
+  }
+}

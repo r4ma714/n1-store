@@ -1,0 +1,455 @@
+.loginPage,
+.adminPage {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(124, 58, 237, 0.35), transparent 36%),
+    radial-gradient(circle at top right, rgba(245, 197, 66, 0.16), transparent 38%),
+    #07070d;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginPage {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.loginCard {
+  width: min(440px, 100%);
+  padding: 34px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+
+.logoBox {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f5c542, #7c3aed);
+  color: #09090f;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-weight: 1000;
+  box-shadow: 0 0 34px rgba(245, 197, 66, 0.25);
+}
+
+.loginCard .logoBox {
+  margin: 0 auto 18px;
+}
+
+.kicker {
+  color: #f5c542;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.loginCard h1,
+.header h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.05;
+  margin-bottom: 10px;
+}
+
+.loginText {
+  color: #c7c7d1;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.input,
+.inputWide,
+.searchInput,
+.smallSelect {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  border-radius: 16px;
+  padding: 14px 16px;
+  outline: none;
+}
+
+.input:focus,
+.inputWide:focus,
+.searchInput:focus {
+  border-color: rgba(245, 197, 66, 0.55);
+  box-shadow: 0 0 0 4px rgba(245, 197, 66, 0.08);
+}
+
+.input option,
+.smallSelect option {
+  background: #11111a;
+  color: white;
+}
+
+.primaryButton,
+.exportButton,
+.telegramButton,
+.logoutButton {
+  border: 0;
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primaryButton {
+  width: 100%;
+  margin-top: 14px;
+  background: linear-gradient(135deg, #f5c542, #b7791f);
+  color: #07070d;
+}
+
+.primaryButton:hover,
+.exportButton:hover,
+.telegramButton:hover,
+.logoutButton:hover,
+.orderActions a:hover,
+.orderActions button:hover {
+  transform: translateY(-2px);
+}
+
+.passwordHint {
+  margin-top: 18px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.passwordHint strong {
+  color: #f5c542;
+}
+
+.adminPage {
+  display: grid;
+  grid-template-columns: 290px 1fr;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebarBrand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sidebarBrand h2 {
+  font-size: 22px;
+}
+
+.sidebarBrand p,
+.header p,
+.panelHeader p {
+  color: #aaa;
+}
+
+.sideLinks {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sideLinks a,
+.telegramButton,
+.logoutButton {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.065);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sideLinks a:hover {
+  color: #f5c542;
+  border-color: rgba(245, 197, 66, 0.24);
+}
+
+.telegramButton {
+  margin-top: auto;
+  text-align: center;
+  background: rgba(124, 58, 237, 0.26);
+}
+
+.logoutButton {
+  background: rgba(239, 68, 68, 0.16);
+}
+
+.content {
+  width: min(1180px, 94%);
+  margin: 0 auto;
+  padding: 34px 0 80px;
+}
+
+.header,
+.panelHeader,
+.orderTop,
+.orderActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.exportButton {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(245, 197, 66, 0.28);
+  color: #f5c542;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.statCard,
+.statCardLarge,
+.panel,
+.orderCard,
+.packageCard,
+.packageCardVip {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  backdrop-filter: blur(12px);
+}
+
+.statCard,
+.statCardLarge {
+  padding: 20px;
+}
+
+.statCard span,
+.statCardLarge span {
+  color: #aaa;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.statCard strong,
+.statCardLarge strong {
+  font-size: 32px;
+  color: #f5c542;
+}
+
+.statCardLarge {
+  grid-column: span 4;
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.13), rgba(124, 58, 237, 0.12));
+}
+
+.panel {
+  padding: 24px;
+  margin-top: 22px;
+}
+
+.panelHeader {
+  margin-bottom: 20px;
+}
+
+.panelHeader h2 {
+  font-size: 28px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.formGrid .primaryButton {
+  margin: 0;
+}
+
+.inputWide {
+  grid-column: span 3;
+}
+
+.searchInput {
+  max-width: 280px;
+}
+
+.orderList {
+  display: grid;
+  gap: 14px;
+}
+
+.orderCard {
+  padding: 18px;
+}
+
+.orderTop strong {
+  color: #f5c542;
+  font-size: 13px;
+}
+
+.orderTop h3 {
+  font-size: 22px;
+  margin: 4px 0;
+}
+
+.orderTop p,
+.orderNote {
+  color: #aaa;
+}
+
+.statusBadge {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.statusPending {
+  background: rgba(245, 158, 11, 0.16);
+  color: #fbbf24;
+}
+
+.statusPaid {
+  background: rgba(59, 130, 246, 0.16);
+  color: #93c5fd;
+}
+
+.statusActive,
+.statusDone {
+  background: rgba(34, 197, 94, 0.16);
+  color: #86efac;
+}
+
+.orderMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.orderMeta span {
+  padding: 9px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.065);
+  color: #ddd;
+  font-weight: 800;
+}
+
+.orderActions {
+  margin-top: 16px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.smallSelect {
+  width: 140px;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.orderActions a,
+.orderActions button {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.07);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.orderActions button {
+  color: #fecaca;
+}
+
+.packageGrid,
+.guideGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.packageCard,
+.packageCardVip {
+  padding: 20px;
+}
+
+.packageCardVip {
+  border-color: rgba(245, 197, 66, 0.48);
+  box-shadow: 0 0 50px rgba(245, 197, 66, 0.08);
+}
+
+.packageCard h3,
+.packageCardVip h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.packageCard strong,
+.packageCardVip strong {
+  color: #f5c542;
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.packageCard p,
+.packageCardVip p {
+  color: #c9c9d1;
+  line-height: 1.7;
+}
+
+.guideGrid div {
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #dedee6;
+  line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+  .adminPage {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+
+  .statsGrid,
+  .formGrid,
+  .packageGrid,
+  .guideGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statCardLarge,
+  .inputWide {
+    grid-column: span 1;
+  }
+
+  .header,
+  .panelHeader,
+  .orderTop {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .searchInput {
+    max-width: 100%;
+  }
+}

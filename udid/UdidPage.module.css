@@ -1,0 +1,360 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(45, 15, 105, 0.85), transparent 34%),
+    radial-gradient(circle at top right, rgba(245, 197, 66, 0.18), transparent 30%),
+    #05050a;
+  color: #fff;
+  padding-bottom: 80px;
+}
+
+.navbar {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+  padding: 26px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand img {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 0 34px rgba(124, 58, 237, 0.5);
+}
+
+.brand span {
+  display: grid;
+  gap: 4px;
+}
+
+.brand strong {
+  font-size: 22px;
+}
+
+.brand small {
+  color: #aaa;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  color: #ddd;
+}
+
+.links a:hover {
+  color: #f5c542;
+}
+
+.hero {
+  width: min(1180px, 92%);
+  margin: 70px auto 40px;
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 46px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  border: 1px solid rgba(245, 197, 66, 0.35);
+  color: #f5c542;
+  border-radius: 999px;
+  padding: 11px 16px;
+  background: rgba(255, 255, 255, 0.06);
+  margin-bottom: 22px;
+  font-weight: 800;
+}
+
+.heroText h1 {
+  font-size: clamp(44px, 7vw, 86px);
+  line-height: 1.02;
+  letter-spacing: -2px;
+  max-width: 850px;
+  background: linear-gradient(135deg, #ffffff, #f5c542 58%, #a78bfa);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heroText p {
+  max-width: 720px;
+  color: #d1d1d8;
+  font-size: 18px;
+  line-height: 1.9;
+  margin: 24px 0;
+}
+
+.actions,
+.actionsWide {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  border: 0;
+  cursor: pointer;
+  border-radius: 17px;
+  padding: 15px 24px;
+  font-weight: 900;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #f5c542, #c48918);
+  color: #08080d;
+  box-shadow: 0 0 34px rgba(245, 197, 66, 0.25);
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-3px);
+}
+
+.primaryButton:disabled,
+.secondaryButton:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.note {
+  font-size: 14px !important;
+  color: #aaa !important;
+}
+
+.phoneCard {
+  min-height: 540px;
+  border-radius: 46px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.04)),
+    #101018;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.5),
+    inset 0 0 60px rgba(124, 58, 237, 0.15);
+}
+
+.phoneSpeaker {
+  width: 120px;
+  height: 12px;
+  border-radius: 999px;
+  background: #030306;
+  margin-bottom: 66px;
+}
+
+.bigIcon {
+  width: 175px;
+  height: 175px;
+  border-radius: 46px;
+  object-fit: cover;
+  box-shadow: 0 0 70px rgba(124, 58, 237, 0.5);
+}
+
+.phoneCard h2 {
+  font-size: 36px;
+  margin-top: 24px;
+}
+
+.phoneCard p {
+  color: #c8c8d0;
+  margin-top: 10px;
+}
+
+.stepsMini {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.stepsMini span {
+  color: #f5c542;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 15px;
+  font-weight: 900;
+}
+
+.stepsSection,
+.resultSection {
+  width: min(1180px, 92%);
+  margin: 95px auto 0;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.sectionHeader span,
+.sectionHeaderSmall span {
+  color: #f5c542;
+  font-weight: 900;
+}
+
+.sectionHeader h2,
+.sectionHeaderSmall h2 {
+  font-size: clamp(32px, 4.5vw, 52px);
+  margin-top: 6px;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.stepCard,
+.resultCard,
+.privacyCard {
+  border-radius: 28px;
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.065);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+.stepCard strong {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  color: #08080d;
+  background: linear-gradient(135deg, #f5c542, #b7791f);
+  margin-bottom: 18px;
+}
+
+.stepCard h3,
+.privacyCard h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.stepCard p,
+.privacyCard p,
+.privacyCard li {
+  color: #c8c8d0;
+  line-height: 1.8;
+}
+
+.resultSection {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.sectionHeaderSmall {
+  margin-bottom: 22px;
+}
+
+.label {
+  color: #f5c542;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.udidBox {
+  width: 100%;
+  min-height: 132px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.24);
+  color: #fff;
+  padding: 18px;
+  font-size: 16px;
+  resize: vertical;
+  outline: none;
+}
+
+.udidBox:focus {
+  border-color: rgba(245, 197, 66, 0.55);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.infoGrid div {
+  border-radius: 18px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.infoGrid span {
+  display: block;
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.infoGrid strong {
+  color: #f5c542;
+}
+
+.privacyCard ol {
+  margin-top: 16px;
+  padding-inline-start: 22px;
+}
+
+@media (max-width: 900px) {
+  .navbar,
+  .hero,
+  .stepsSection,
+  .resultSection {
+    width: min(94%, 720px);
+  }
+
+  .hero,
+  .stepsGrid,
+  .resultSection {
+    grid-template-columns: 1fr;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .phoneCard {
+    min-height: 460px;
+  }
+
+  .infoGrid,
+  .stepsMini {
+    grid-template-columns: 1fr;
+  }
+}
