@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadContent</key>
+  <dict>
+    <key>URL</key>
+    <string>https://n1-store.netlify.app/api/udid/callback?token=n1</string>
+    <key>DeviceAttributes</key>
+    <array>
+      <string>UDID</string>
+      <string>DEVICE_NAME</string>
+      <string>VERSION</string>
+      <string>PRODUCT</string>
+      <string>SERIAL</string>
+      <string>IMEI</string>
+      <string>ICCID</string>
+    </array>
+  </dict>
+  <key>PayloadOrganization</key>
+  <string>N1 Store</string>
+  <key>PayloadDisplayName</key>
+  <string>N1 Store UDID Profile</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+  <key>PayloadUUID</key>
+  <string>2E5C4C5F-3935-4C73-85CC-A7A519B1C9D1</string>
+  <key>PayloadIdentifier</key>
+  <string>com.n1store.udid.profile</string>
+  <key>PayloadDescription</key>
+  <string>This profile asks your iPhone or iPad for UDID so N1 Store can register your device.</string>
+  <key>PayloadType</key>
+  <string>Profile Service</string>
+</dict>
+</plist>
